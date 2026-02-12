@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.1] - 2026-02-12
+### Fixed
+- Docker build in CI/release now installs dependencies with `--ignore-scripts` before source copy.
+- Added `.dockerignore` to reduce context size and avoid leaking local build artifacts.
+
 ## [0.1.0] - 2026-02-12
 ### Added
 - TypeScript monorepo layout with generator/runtime/templates/cli packages

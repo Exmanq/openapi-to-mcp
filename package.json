@@ -1,6 +1,6 @@
 {
   "name": "openapi-to-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "description": "Generate production-ready MCP servers from OpenAPI/GraphQL/JSON-RPC schemas.",
   "type": "module",
@@ -22,7 +22,13 @@
     "doctor": "node scripts/doctor.mjs",
     "prepare": "npm run build"
   },
-  "keywords": ["mcp", "openapi", "graphql", "json-rpc", "generator"],
+  "keywords": [
+    "mcp",
+    "openapi",
+    "graphql",
+    "json-rpc",
+    "generator"
+  ],
   "author": "Exmanq",
   "license": "MIT",
   "devDependencies": {
