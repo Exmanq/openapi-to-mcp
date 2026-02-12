@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-12T11:42:58.513Z",
+  "generatedAt": "2026-02-12T11:48:36.401Z",
   "minimal": {
     "name": "petstore-mcp",
     "toolCount": 3,
@@ -19,7 +19,7 @@
     }
   },
   "outputs": [
-    "/home/exmanq/clawd/openapi-to-mcp/examples/output/generated-minimal/server.mjs",
-    "/home/exmanq/clawd/openapi-to-mcp/examples/output/generated-advanced/server.mjs"
+    "examples/output/generated-minimal/server.mjs",
+    "examples/output/generated-advanced/server.mjs"
   ]
 }

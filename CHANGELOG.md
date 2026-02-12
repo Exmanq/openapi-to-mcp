@@ -1,5 +1,10 @@
 # Changelog
 
+## [0.1.2] - 2026-02-12
+### Fixed
+- Removed absolute local filesystem paths from committed demo artifact (`examples/output/demo-summary.json`).
+- Demo summary now writes repository-relative output paths only.
+
 ## [0.1.1] - 2026-02-12
 ### Fixed
 - Docker build in CI/release now installs dependencies with `--ignore-scripts` before source copy.
