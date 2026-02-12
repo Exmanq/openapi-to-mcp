@@ -1,0 +1,9 @@
+{
+  "name": "rpc-mcp",
+  "toolCount": 2,
+  "defaults": {
+    "authEnv": "MCP_AUTH_TOKEN",
+    "rateLimitPerMinuteEnv": "MCP_RATE_LIMIT_PER_MINUTE",
+    "logLevelEnv": "MCP_LOG_LEVEL"
+  }
+}

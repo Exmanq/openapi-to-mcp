@@ -1,0 +1,39 @@
+{
+  "name": "openapi-to-mcp",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Generate production-ready MCP servers from OpenAPI/GraphQL/JSON-RPC schemas.",
+  "type": "module",
+  "bin": {
+    "openapi-to-mcp": "dist/packages/cli/src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest run",
+    "demo": "node dist/packages/cli/src/index.js build --input examples/minimal/petstore.openapi.json --out examples/output/generated-minimal --type openapi --name petstore-mcp --emit-openapi-runtime && node dist/packages/cli/src/index.js build --input examples/advanced/rpc.json --out examples/output/generated-advanced --type jsonrpc --name rpc-mcp && node scripts/write-demo-summary.mjs",
+    "doctor": "node scripts/doctor.mjs",
+    "prepare": "npm run build"
+  },
+  "keywords": ["mcp", "openapi", "graphql", "json-rpc", "generator"],
+  "author": "Exmanq",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "@types/node": "^22.10.2",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.20.0",
+    "vitest": "^2.1.8",
+    "yaml": "^2.6.1"
+  }
+}

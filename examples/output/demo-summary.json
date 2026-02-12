@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-02-12T11:42:58.513Z",
+  "minimal": {
+    "name": "petstore-mcp",
+    "toolCount": 3,
+    "defaults": {
+      "authEnv": "MCP_AUTH_TOKEN",
+      "rateLimitPerMinuteEnv": "MCP_RATE_LIMIT_PER_MINUTE",
+      "logLevelEnv": "MCP_LOG_LEVEL"
+    }
+  },
+  "advanced": {
+    "name": "rpc-mcp",
+    "toolCount": 2,
+    "defaults": {
+      "authEnv": "MCP_AUTH_TOKEN",
+      "rateLimitPerMinuteEnv": "MCP_RATE_LIMIT_PER_MINUTE",
+      "logLevelEnv": "MCP_LOG_LEVEL"
+    }
+  },
+  "outputs": [
+    "/home/exmanq/clawd/openapi-to-mcp/examples/output/generated-minimal/server.mjs",
+    "/home/exmanq/clawd/openapi-to-mcp/examples/output/generated-advanced/server.mjs"
+  ]
+}

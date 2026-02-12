@@ -1,0 +1,7 @@
+{
+  "jsonrpc": "2.0",
+  "methods": [
+    { "name": "inventory.search", "description": "Search inventory records" },
+    { "name": "inventory.update", "description": "Update inventory item" }
+  ]
+}
